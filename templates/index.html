@@ -1,1 +1,35 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Indicator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="hero-panel">
+            <div class="hero-copy">
+                <p class="eyebrow">Student Analytics</p>
+                <h1>Student Exam Performance Indicator</h1>
+                <p class="hero-text">
+                    Predict maths performance from student background and exam score inputs.
+                </p>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Ready to predict</span>
+                <strong>ML</strong>
+                <span class="stat-note">powered score estimation</span>
+            </div>
+        </section>
+
+        <section class="form-card landing-card">
+            <div class="form-header">
+                <p class="eyebrow">Get Started</p>
+                <h2>Open the prediction form</h2>
+            </div>
+            <a class="primary-button link-button" href="{{ url_for('predict_datapoint') }}">Start Prediction</a>
+        </section>
+    </main>
+</body>
+</html>
